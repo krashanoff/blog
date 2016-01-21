@@ -6,9 +6,5 @@ html{
   background-size: cover;
 }
 body{
-  font-family: 'Roboto', sans-serif;
   background-color: black;
-}
-h1, h3, p{
-  color: white;
 }
