@@ -1,10 +1,7 @@
-# Site settings
 title: Leo Krashanoff
 email: lkrashanoff2@gmail.com
-description: ayy lmao
+description: a blog
 baseurl: ""
-url: "http://about.krashanoff.com"
+url: "http://blog.krashanoff.com"
 github_username:  krashanoff
-
-# Build settings
 markdown: kramdown
