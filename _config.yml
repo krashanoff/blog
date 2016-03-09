@@ -1,7 +1,7 @@
 title: Leo Krashanoff
 email: lkrashanoff2@gmail.com
-description: a blog
-baseurl: "http://krashanoff.github.io"
 url: "http://blog.krashanoff.com"
 github_username:  krashanoff
 markdown: kramdown
+highlighter: rouge
+permalink: /:title/
