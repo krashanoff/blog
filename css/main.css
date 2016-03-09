@@ -61,6 +61,7 @@ blockquote{
 
 #phatwrap{
   display: none;
+  position: relative;
 }
 
 #withlove{
