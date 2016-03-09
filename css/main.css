@@ -68,10 +68,14 @@ blockquote{
   font-family: 'Raleway', sans-serif;
   position: absolute;
   bottom: 0;
-  right: 0.5;
+  left: 0;
 }
 
 #postcontent{
   max-width: 30%;
   width: 30%;
+}
+
+#relativebox{
+  position: relative;
 }
