@@ -21,3 +21,7 @@ a:hover{
   text-decoration: none;
   cursor: pointer;
 }
+
+#phatwrap{
+  display: none;
+}
