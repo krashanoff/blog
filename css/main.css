@@ -7,8 +7,12 @@ body{
   min-height: 100%;
 }
 
-h1, h2, h3, h4, h5, h6, p, .post-title{
+h1, h2, h3, h4, h5, h6{
   font-family: 'Roboto', sans-serif;
+}
+
+p{
+  font-family: 'Raleway', sans-serif;
 }
 
 a{
@@ -48,6 +52,11 @@ code{
   margin-right: 0px;
   margin-bottom: 0px;
   margin-top: 0px;
+}
+
+blockquote{
+  color: rgb(100, 100, 100);
+  font-size: 50%;
 }
 
 #phatwrap{
