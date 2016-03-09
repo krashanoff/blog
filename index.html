@@ -1,15 +1,21 @@
 ---
 layout: default
 ---
+<script>
+$(document).ready(function(){
+  $("#phatwrap").fadeIn();
+});
+</script>
+<div id="phatwrap">
+  <ul>
+    {% for post in site.posts %}
+      <li>
+        <h2>
+          <a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
+        </h2>
+      </li>
+    {% endfor %}
+  </ul>
 
-<ul>
-  {% for post in site.posts %}
-    <li>
-      <h2>
-        <a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
-      </h2>
-    </li>
-  {% endfor %}
-</ul>
-
-<p >subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p>
+  <p >subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p>
+</div>
