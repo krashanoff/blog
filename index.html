@@ -5,14 +5,14 @@ layout: default
 
   {% for post in site.posts %}
 
-    <h2 id="postlink">
-      <a href="{{ post.url | prepend: site.baseurl }}" id="a">{{ post.title }}</a>
+    <h2>
+      <a href="{{ post.url | prepend: site.baseurl }}" id="postlink">{{ post.title }}</a>
     </h2>
 
   {% endfor %}
 
   <script>
-  $("#a").click(function(event){
+  $("#postlink").click(function(event){
         event.preventDefault();
         linkLocation = this.href;
         $("#phatwrap").fadeOut(2500, redirectPage(linkLocation));
