@@ -10,3 +10,14 @@ body{
 h1, h2, h3, h4, h5, h6, p{
   font-family: 'Roboto', sans-serif;
 }
+
+a{
+  color: rgb(74, 74, 74);
+  text-decoration: none;
+}
+
+a:hover{
+  color: rgb(150, 150, 150);
+  text-decoration: none;
+  cursor: pointer;
+}
