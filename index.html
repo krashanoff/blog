@@ -3,7 +3,7 @@ layout: default
 ---
 <div>
   {% for post in site.posts %}
-    <h2>
+    <h2 id="postlink">
       <a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
     </h2>
   {% endfor %}
