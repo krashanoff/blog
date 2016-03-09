@@ -23,6 +23,7 @@ a:hover{
 }
 
 code{
+  /*this is just github's styling for their code*/
   background-color: rgb(247, 247, 247);
   border-bottom-left-radius: 3px;
   border-bottom-right-radius: 3px;
