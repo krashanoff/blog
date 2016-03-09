@@ -25,3 +25,8 @@ a:hover{
 #phatwrap{
   display: none;
 }
+
+#withlove{
+  color: rgb(150, 150, 150);
+  font-family: 'Raleway', sans-serif;
+}

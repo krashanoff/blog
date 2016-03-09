@@ -3,12 +3,10 @@ layout: default
 ---
 <div>
   {% for post in site.posts %}
-    <li>
-      <h2>
-        <a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
-      </h2>
-    </li>
+    <h2>
+      <a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
+    </h2>
   {% endfor %}
 
-  <h4 style="color: rgb(150, 150, 150);"><a href="http://www.github.com/krashanoff">made by krashanoff</a></h4>
+  <h4 id="withlove"><a href="http://www.github.com/krashanoff">made by krashanoff</a></h4>
 </div>
