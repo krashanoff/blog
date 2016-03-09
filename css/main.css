@@ -68,7 +68,7 @@ blockquote{
   font-family: 'Raleway', sans-serif;
   position: absolute;
   bottom: 0;
-  right: 0;
+  right: 0.5;
 }
 
 #postcontent{
