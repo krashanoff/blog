@@ -23,8 +23,30 @@ a:hover{
 }
 
 code{
-  background-color: rgb(150, 150, 150);
-  color: rgb(74, 74, 74);
+  background-color: rgb(247, 247, 247);
+  border-bottom-left-radius: 3px;
+  border-bottom-right-radius: 3px;
+  border-top-right-radius: 3px;
+  border-top-right-radius: 3px;
+  box-sizing: border-box;
+  color: rgb(51, 51, 51);
+  display: block;
+  font-family: 'Inconsolata', ;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: normal;
+  font-size: 13.6px;
+  padding-left: 16px;
+  padding-right: 16px;
+  padding-top: 16px;
+  padding-bottom: 16px;
+  word-wrap: normal;
+  overflow-x: auto;
+  overflow-y: auto;
+  margin-left: 0px;
+  margin-right: 0px;
+  margin-bottom: 0px;
+  margin-top: 0px;
 }
 
 #phatwrap{
