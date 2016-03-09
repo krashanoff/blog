@@ -67,3 +67,8 @@ blockquote{
   color: rgb(150, 150, 150);
   font-family: 'Raleway', sans-serif;
 }
+
+#postcontent{
+  max-width: 40%;
+  width: 40%;
+}
