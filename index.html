@@ -1,7 +1,7 @@
 ---
 layout: default
 ---
-<div id="phatwrap">
+<div>
   <ul>
     {% for post in site.posts %}
       <li>
@@ -14,8 +14,3 @@ layout: default
 
   <p >subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p>
 </div>
-<script>
-$(document).ready(function(){
-  $("#phatwrap").fadeIn();
-});
-</script>

@@ -5,11 +5,17 @@
 
   <body onload="">
 
-    <div class="page-content">
+    <div class="page-content" id="phatwrap">
       <div class="wrapper">
         {{ content }}
       </div>
     </div>
+
+    <script>
+    $(document).ready(function(){
+      $("#phatwrap").fadeIn(3000);
+    });
+    </script>
 
   </body>
 
