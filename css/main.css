@@ -84,3 +84,10 @@ blockquote{
 #fourzerofour{
   display: none;
 }
+
+@media only screen and (max-device-width: 480px) {
+  #postcontent {
+    max-width: 100%;
+    width: 100%;
+  }
+}
