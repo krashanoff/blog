@@ -1,14 +1,18 @@
 ---
 layout: default
 ---
-<div id="relativebox">
-
+<div id="postlist">
   {% for post in site.posts %}
-
-    <h2 id="postlink">
-      <a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
-    </h2>
-
+  <h2>
+    <a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
+  </h2>
   {% endfor %}
-
 </div>
+<p>eh</p>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
+<script>
+  $( document ).ready(function(){
+    $('#postlist').fadeIn(1500);
+  });
+</script>
