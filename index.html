@@ -1,18 +1,9 @@
 ---
 layout: default
 ---
-<div id="postlist">
-  {% for post in site.posts %}
-  <h2>
-    <a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
-  </h2>
-  {% endfor %}
-</div>
-<p>eh</p>
 
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
-<script>
-  $( document ).ready(function(){
-    $('#postlist').fadeIn(1500);
-  });
-</script>
+{% for post in site.posts %}
+  <h1>
+    <a class="postlink" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
+  </h1>
+{% endfor %}

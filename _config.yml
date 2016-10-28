@@ -1,7 +1,11 @@
-title: blog | Leonid Krashanoff
+title: gh.krashanoff.com
 email: lkrashanoff2@gmail.com
+description: My coding endeavors cataloged.
+baseurl: ""
 url: "http://gh.krashanoff.com"
 github_username: krashanoff
+
+timezone: America/Los_Angeles
+
 markdown: kramdown
 highlighter: rouge
-permalink: /:title/
