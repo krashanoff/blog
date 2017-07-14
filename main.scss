@@ -17,21 +17,16 @@ body {
   color: $foreground;
 }
 
-@keyframes fadeIn {
-  0% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-  }
-};
-
 a, a:visited, a:active, a:hover, a:link {
   color: $accent;
   font-size: 1.4em;
   text-decoration: none;
   border-bottom: 1px dotted $foreground;
-  cursor: auto;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -o-user-select: none;
+  user-select: none;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -41,6 +36,7 @@ h1, h2, h3, h4, h5, h6 {
 
 code {
   font-weight: lighter;
+  font-size: 1.4em;
   display: block;
   padding: 5px;
   color: $subtle;
@@ -57,7 +53,6 @@ blockquote {
 
 .content {
   position: absolute;
-  animation: 0.8s linear fadeIn;
   background-color: rgba(0,0,0,0.4);
   box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
   padding: 0 3vw 0 3vw;
@@ -66,6 +61,7 @@ blockquote {
   height: fit-content;
   min-height: 100vh;
   left: 16vw;
+  transition: all 0.4s ease-in;
 }
 
 #signoff {
@@ -73,9 +69,22 @@ blockquote {
   top: 3vh;
   right: 3vh;
   a {
-    font-size: 2em;
+    font-size: 1.75vw;
     color: $foreground;
     padding: 0;
     margin: 0;
   }
 }
+
+.postcontent {
+  animation: 0.8s linear fadeIn;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+};
