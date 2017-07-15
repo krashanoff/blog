@@ -1,8 +1,8 @@
-title: gh.krashanoff.com
+title: blog.krashanoff.com
 email: lkrashanoff2@gmail.com
-description: My coding endeavors cataloged.
+description: A small blog about typing on keyboards
 baseurl: ""
-url: "http://gh.krashanoff.com"
+url: "http://blog.krashanoff.com"
 github_username: krashanoff
 
 timezone: America/Los_Angeles
