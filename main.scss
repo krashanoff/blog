@@ -89,7 +89,7 @@ blockquote {
   }
 };
 
-@media screen and (max-width:960px) {
+@media only screen and (max-width:1000px) {
   .content {
     width: 100vw;
     padding: 6vh 0 0 0;
@@ -98,12 +98,13 @@ blockquote {
 
   .postlink {
     margin-left: 4vw;
+    font-size: 8vw !important;
   }
 
   #signoff {
     z-index: 10;
-    a{
-      font-size: 1.4em;
+    a, a:active, a:visited, a:link {
+      font-size: 4vw;
     }
   }
 }
