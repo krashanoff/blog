@@ -1,0 +1,73 @@
+---
+---
+
+@import url('https://fonts.googleapis.com/css?family=Lora:400,700');
+@import 'http://cdn.jsdelivr.net/font-hack/2.020/css/hack.min.css';
+
+:root {
+    --bgc: #fdfdfd;
+    --fgc: #0f0f0f;
+    --cmc: #5E655E;
+}
+
+body {
+    font-family: 'Lora', sans-serif;
+    background: var(--bgc);
+    color: var(--fgc);
+}
+
+code {
+    padding: 2%;
+    background: #e0e0e0;
+    font-family: 'Hack', monospace;
+    font-size: .7em;
+}
+
+img {
+    text-align: center;
+}
+
+blockquote {
+    font-size: 1.5em;
+    color: var(--cmc);
+    margin: 0;
+    padding: .1% 0 .1% 5%;
+    border-left-style: solid;
+    border-left-width: 3px;
+    border-left-color: var(--cmc);
+}
+
+#animcontain {
+    position: absolute;
+    top: -50vh;
+    left: -160vh;
+    min-height: 150%;
+    max-height: 200%;
+    width: 150%;
+    overflow: hidden;
+    z-index: -10;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -o-user-select: none;
+    user-select: none;
+}
+
+#animation {
+    width: 200vh;
+    height: 200vh;
+    background: #0f0f0f;
+    border-radius: 44%;
+    transform-origin: 45% 52.5%;
+    animation: 25s rotate infinite;
+    overflow: hidden;
+}
+
+@keyframes rotate {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}

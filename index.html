@@ -4,6 +4,6 @@ layout: default
 
 {% for post in site.posts %}
   <h1>
-    <a class="postlink" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
+    <a class="posttitle" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
   </h1>
 {% endfor %}

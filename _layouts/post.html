@@ -7,3 +7,14 @@ layout: default
     {{ content }}
   </div>
 </div>
+
+{% if page.auth == "leo" %}
+  <div id='animcontain'>
+    <div id='animation'></div>
+  </div>
+  <link rel='stylesheet' type='text/css' href='/leo.css'>
+{% endif %}
+
+{% if page.auth == "seb" %}
+  <link rel='stylesheet' type='text/css' href='/seb.css'>
+{% endif %}

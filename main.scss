@@ -1,27 +1,32 @@
 ---
 ---
 
-@import 'http://cdn.jsdelivr.net/font-hack/2.020/css/hack.min.css';
-
-$foreground: #7ea2b4;
-$compliment: #5d5db1;
-$background: #161b1d;
-$subtle: #568c3b;
-$accent: #d22d72;
-
 body {
-  font-family: 'Hack', monospace;
   word-wrap: break-word;
   margin: 0;
-  background: $background;
-  color: $foreground;
+  background: white;
+  color: black;
+  font-size: 1.25em;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-smooth: always;
+}
+
+.content {
+  width: 40vw;
+  margin: 0 auto;
+  padding: 2%;
+}
+
+img {
+  max-width: 100%;
 }
 
 a, a:visited, a:active, a:hover, a:link {
-  color: $accent;
+  color: black;
   font-size: 1.4em;
   text-decoration: none;
-  border-bottom: 1px dotted $foreground;
+  border-bottom: 1px dotted white;
   -webkit-user-select: none;
   -khtml-user-select: none;
   -moz-user-select: none;
@@ -29,71 +34,22 @@ a, a:visited, a:active, a:hover, a:link {
   user-select: none;
 }
 
-h1, h2, h3, h4, h5, h6 {
-  font-weight: lighter;
-  color: $accent;
-}
-
-code {
-  font-weight: lighter;
-  font-size: 1.4em;
-  display: block;
-  padding: 5px;
-  color: $subtle;
-}
-
-img {
-  padding: 10px;
-}
-
-blockquote {
-  font-size: 3em;
-  color: $compliment;
-}
-
-.content {
-  position: absolute;
-  background-color: rgba(0,0,0,0.4);
-  box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
-  padding: 0 3vw 0 3vw;
-  display: block;
-  width: 40vw;
-  height: fit-content;
-  min-height: 100vh;
-  left: 27vw;
-  transition: all 0.4s ease-in;
-}
-
 #signoff {
   position: absolute;
   top: 3vh;
   right: 3vh;
-  a {
-    font-size: 1.75vw;
-    color: $foreground;
-    padding: 0;
-    margin: 0;
-  }
+  font-size: 1.75vw;
+  padding: 0;
+  margin: 0;
 }
-
-.postcontent {
-  animation: 0.8s linear fadeIn;
-}
-
-@keyframes fadeIn {
-  0% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-  }
-};
 
 @media only screen and (max-width:1000px) {
+  body {
+    font-size: 1.15em;
+  }
   .content {
-    width: 100vw;
-    padding: 0;
-    left: 0;
+    width: 90%;
+    padding: 5%;
   }
 
   .postlink {

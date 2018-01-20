@@ -1,2 +1,2 @@
 # blog
-### *Lakeside*
+Created by Sebastian Boyd and Leo Krashanoff.
