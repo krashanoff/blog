@@ -1,7 +1,6 @@
 ---
 layout: post
 title: "Example Leo Post"
-auth: "leo"
 ---
 
 Have you ever wondered what Leo's blog posts might look like?

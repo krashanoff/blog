@@ -1,12 +1,22 @@
 ---
 ---
+@import url('https://fonts.googleapis.com/css?family=Lora:400,700');
+@import url('');
+
+:root {
+  --bgc: #fdfdfd;
+  --fgc: #0f0f0f;
+  --cmc: #606060;
+}
 
 body {
   word-wrap: break-word;
   margin: 0;
-  background: white;
-  color: black;
+  background: var(--bgc);
+  color: var(--fgc);
+  font-family: 'Lora', sans-serif;
   font-size: 1.25em;
+  line-height: 1.5;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   font-smooth: always;
@@ -18,15 +28,31 @@ body {
   padding: 2%;
 }
 
+code {
+  padding: 2%;
+  background: #e0e0e0;
+  font-family: 'Roboto Mono', monospace;
+  font-size: .7em;
+}
+
+blockquote {
+  font-size: 1.5em;
+  color: var(--cmc);
+  margin: 0;
+  padding: .1% 0 .1% 5%;
+  border-left-style: solid;
+  border-left-width: 3px;
+  border-left-color: var(--cmc);
+}
+
 img {
   max-width: 100%;
 }
 
-a, a:visited, a:active, a:hover, a:link {
-  color: black;
-  font-size: 1.4em;
+a, a:visited, a:active, a:link {
+  color: var(--fgc);
   text-decoration: none;
-  border-bottom: 1px dotted white;
+  border-bottom: 1px dotted var(--fgc);
   -webkit-user-select: none;
   -khtml-user-select: none;
   -moz-user-select: none;
@@ -34,11 +60,16 @@ a, a:visited, a:active, a:hover, a:link {
   user-select: none;
 }
 
+a:hover {
+  color: var(--cmc);
+  transition: .2s ease-in;
+}
+
 #signoff {
   position: absolute;
-  top: 3vh;
-  right: 3vh;
-  font-size: 1.75vw;
+  top: 2.5vh;
+  left: 2.5vh;
+  font-size: 1.3em;
   padding: 0;
   margin: 0;
 }
@@ -47,20 +78,13 @@ a, a:visited, a:active, a:hover, a:link {
   body {
     font-size: 1.15em;
   }
+
   .content {
     width: 90%;
     padding: 5%;
   }
 
-  .postlink {
-    margin-left: 4vw;
-    font-size: 8vw !important;
-  }
-
   #signoff {
-    z-index: 10;
-    a, a:active, a:visited, a:link {
-      font-size: 4vw;
-    }
+    font-size: 1em;
   }
 }

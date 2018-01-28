@@ -3,18 +3,5 @@ layout: default
 ---
 <div class="post">
   <h1 class="posttitle"><a href="{{ site.baseurl }}/">{{ page.title }}</a></h1>
-  <div class="postcontent">
-    {{ content }}
-  </div>
+  {{ content }}
 </div>
-
-{% if page.auth == "leo" %}
-  <div id='animcontain'>
-    <div id='animation'></div>
-  </div>
-  <link rel='stylesheet' type='text/css' href='/leo.css'>
-{% endif %}
-
-{% if page.auth == "seb" %}
-  <link rel='stylesheet' type='text/css' href='/seb.css'>
-{% endif %}
