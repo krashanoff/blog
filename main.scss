@@ -1,12 +1,17 @@
 ---
 ---
-@import url('https://fonts.googleapis.com/css?family=Lora:400,700');
-@import url('');
+
+/* TODO:
+ * Fix mobile
+ * Finalize font stack
+ * Write things
+ */
 
 :root {
   --bgc: #fdfdfd;
   --fgc: #0f0f0f;
   --cmc: #606060;
+  --codebg: #e0e0e0;
 }
 
 body {
@@ -30,9 +35,9 @@ body {
 
 code {
   padding: 2%;
-  background: #e0e0e0;
+  background: var(--codebg);
   font-family: 'Roboto Mono', monospace;
-  font-size: .7em;
+  font-size: .75em;
 }
 
 blockquote {
@@ -69,9 +74,10 @@ a:hover {
   position: absolute;
   top: 2.5vh;
   left: 2.5vh;
-  font-size: 1.3em;
   padding: 0;
   margin: 0;
+  font-family: 'Roboto Mono', monospace;
+  font-size: 1.3em;
 }
 
 @media only screen and (max-width:1000px) {
