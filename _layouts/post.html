@@ -3,5 +3,6 @@ layout: default
 ---
 <div class="post">
   <h1 class="posttitle"><a href="{{ site.baseurl }}/">{{ page.title }}</a></h1>
+  <p class="postdate">{{ page.date | date: "%-d %B %Y" }}</p>
   {{ content }}
 </div>

@@ -63,11 +63,21 @@ a, a:visited, a:active, a:link {
   -moz-user-select: none;
   -o-user-select: none;
   user-select: none;
+  transition: color .4s cubic-bezier(.52,.8,.54,.26);
 }
 
 a:hover {
   color: var(--cmc);
-  transition: .2s ease-in;
+}
+
+.posttitle {
+  margin: 4% 0;
+}
+
+.postdate {
+  display: inline-block;
+  margin: 0;
+  font-size: 1.2em;
 }
 
 #signoff {
