@@ -1,12 +1,6 @@
 ---
 ---
 
-/* TODO:
- * Fix mobile
- * Finalize font stack
- * Write things
- */
-
 :root {
   --bgc: #fdfdfd;
   --fgc: #0f0f0f;
@@ -15,13 +9,13 @@
 }
 
 body {
-  word-wrap: break-word;
   margin: 0;
   background: var(--bgc);
   color: var(--fgc);
   font-family: 'Lora', sans-serif;
   font-size: 1.25em;
   line-height: 1.5;
+  word-wrap: break-word;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   font-smooth: always;
@@ -30,18 +24,17 @@ body {
 .content {
   width: 40vw;
   margin: 0 auto;
-  padding: 2%;
+  padding: 4%;
 }
 
-code {
-  padding: 2%;
+pre {
   background: var(--codebg);
+  padding: 2%;
   font-family: 'Roboto Mono', monospace;
-  font-size: .75em;
 }
 
 blockquote {
-  font-size: 1.5em;
+  font-size: 1.25em;
   color: var(--cmc);
   margin: 0;
   padding: .1% 0 .1% 5%;
@@ -51,6 +44,7 @@ blockquote {
 }
 
 img {
+  margin: 1%;
   max-width: 100%;
 }
 
@@ -82,10 +76,9 @@ a:hover {
 
 #signoff {
   position: absolute;
-  top: 2.5vh;
-  left: 2.5vh;
   padding: 0;
-  margin: 0;
+  top: 2%;
+  left: 2%;
   font-family: 'Roboto Mono', monospace;
   font-size: 1.3em;
 }

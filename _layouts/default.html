@@ -1,23 +1,22 @@
 <!DOCTYPE html>
-<html>
+<html lang='en'>
   <head>
     <meta name="title" content="{{ site.title }}">
     <meta name="description" content="{{ site.description }}">
     <meta name="author" content="{{ site.author }}">
     <title>{{ site.title }}</title>
     <link rel="icon" href="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7">
+    <link rel="stylesheet" type="text/css" href="{{site.baseurl}}/main.css">
   </head>
 
   <body>
     <div id="signoff">
-      <a id="name" onclick="https://github.com/krashanoff">krashanoff</a>
+      <a id="name" href="https://github.com/krashanoff">krashanoff</a>
     </div>
     
-    <div class="content">
+    <div class="content" id="top">
       {{ content }}
     </div>
-    
-    <link rel="stylesheet" type="text/css" href="{{site.baseurl}}/main.css">
     
     <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
     <script>
