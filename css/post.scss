@@ -1,0 +1,59 @@
+---
+---
+
+@import url('https://fonts.googleapis.com/css?family=Roboto+Mono');
+
+:root {
+    --postd: #2ea591;
+    --bq: #9dcae0;
+
+    --codebg: #dadada;
+    --codefg: #0f0f0f;
+    --codek: #18829c;
+    --codekt: #9c187b;
+    --codeo: #143c44;
+}
+
+pre {
+    background: var(--codebg);
+    color: var(--codefg);
+    padding: 2%;
+    font-family: 'Roboto Mono', monospace;
+}
+  
+div[class*='language'] {
+    .k {
+        color: var(--codek);
+    }
+    .kt {
+        color: var(--codekt);
+    }
+    .o {
+        color: var(--codeo);
+    }
+    .n {
+        color: var(--codefg);
+    }
+}
+  
+blockquote {
+    font-size: 1.4em;
+    color: var(--bq);
+    margin: 0;
+    padding: .1% 0 .1% 5%;
+    border-left-style: solid;
+    border-left-width: 3px;
+    border-left-color: var(--bq);
+}
+  
+img {
+    margin: 1%;
+    max-width: 100%;
+}
+
+.postdate {
+    display: inline-block;
+    margin: 0;
+    font-size: 1.2em;
+    color: var(--postd);
+}

@@ -1,0 +1,64 @@
+---
+---
+
+@import url('https://fonts.googleapis.com/css?family=Lora|Roboto+Mono');
+
+:root {
+  --bgc: #0f1314;
+  --fgc: #9dcae0;
+  --cmc: #ffacac;
+}
+
+body {
+  margin: 0;
+  background: var(--bgc);
+  color: var(--fgc);
+  font-family: 'Lora', sans-serif;
+  font-size: 1.25em;
+  line-height: 1.5;
+  word-wrap: break-word;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-smooth: always;
+}
+
+.content {
+  width: 40vw;
+  margin: 0 auto;
+  padding: 4%;
+}
+
+a, a:visited, a:active, a:link {
+  color: var(--fgc);
+  text-decoration: none;
+  border-bottom: 1px dotted var(--fgc);
+  transition: color .3s cubic-bezier(.52,.8,.54,.26);
+}
+
+a:hover {
+  color: var(--cmc);
+}
+
+#signoff {
+  position: absolute;
+  padding: 0;
+  top: 2%;
+  left: 2%;
+  font-family: 'Roboto Mono', monospace;
+  font-size: 1.3em;
+}
+
+@media only screen and (max-width:1000px) {
+  body {
+    font-size: 1.15em;
+  }
+
+  .content {
+    width: 90%;
+    padding: 5%;
+  }
+
+  #signoff {
+    font-size: 1em;
+  }
+}
