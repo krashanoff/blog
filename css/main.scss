@@ -48,6 +48,34 @@ a:hover {
   font-size: 1.3em;
 }
 
+#day {
+  position: fixed;
+  display: block;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 100vw;
+  pointer-events:none;
+  background:white;
+  opacity: 0;
+  transition: opacity 1s ease-in;
+}
+
+.dayfilter {
+  opacity: 1 !important;
+  mix-blend-mode: difference;
+}
+
+#toggleday {
+  position: fixed;
+  bottom: 5em;
+  right: 5em;
+  width: 2.5em;
+  height: 2.5em;
+  border-radius: 2.5em;
+  background: var(--cmc);
+}
+
 @media only screen and (max-width:1000px) {
   body {
     font-size: 1.15em;
