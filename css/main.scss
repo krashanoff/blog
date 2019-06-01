@@ -53,16 +53,12 @@ a:hover {
   display: block;
   top: 0;
   left: 0;
+  z-index: 5;
   height: 100vh;
   width: 100vw;
   pointer-events:none;
   background:white;
   opacity: 0;
-  transition: opacity 1s ease-in;
-}
-
-.dayfilter {
-  opacity: 1 !important;
   mix-blend-mode: difference;
 }
 
@@ -72,7 +68,7 @@ a:hover {
   right: 5em;
   width: 2.5em;
   height: 2.5em;
-  border-radius: 2.5em;
+  border-radius: 100%;
   background: var(--cmc);
 }
 

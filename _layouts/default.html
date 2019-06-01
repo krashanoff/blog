@@ -4,16 +4,15 @@
     <meta name='title' content='{{ site.title }}'>
     <meta name='description' content='{{ site.description }}'>
     <meta name='author' content='{{ site.author }}'>
-    <title>{{ site.title }}</title>
+    <title>{{ page.title }}</title>
     <link rel='icon' href='data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7'>
-
-    {% if page.type == post %}<link rel='stylesheet' type='text/css' href='{{site.baseurl}}/css/post.css'>{% endif %}
-    <link rel='stylesheet' type='text/css' href='{{site.baseurl}}/css/main.css'>
+    <link rel='stylesheet' type='text/css' href='{{ site.baseurl }}/css/main.css'>
+    {% if page.type == post %}<link rel='stylesheet' type='text/css' href='{{ site.baseurl }}/css/post.css'>{% endif %}
   </head>
 
   <body>
     <div id='signoff'>
-      <a id='name' href='https://github.com/krashanoff'>krashanoff</a>
+      <a id='name' href='https://krashanoff.com'>krashanoff</a>
     </div>
     
     <div class='content' id='top'>
@@ -23,6 +22,6 @@
     <div id='day'></div>
     <a id='toggleday'></a>
 
-    <script src='main.js'></script>
+    <script src='{{ site.baseurl }}/js/main.js'></script>
   </body>
 </html>
