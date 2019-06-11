@@ -72,7 +72,7 @@ a:hover {
   background: var(--cmc);
 }
 
-@media only screen and (max-width:1000px) {
+@media screen and (max-width: 500px) {
   body {
     font-size: 1.15em;
   }
@@ -80,9 +80,15 @@ a:hover {
   .content {
     width: 90%;
     padding: 5%;
+    margin-bottom: 10vh;
   }
 
   #signoff {
     font-size: 1em;
+  }
+
+  #toggleday {
+    bottom: 5%;
+    right: 5%;
   }
 }
